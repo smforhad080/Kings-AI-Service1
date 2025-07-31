@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>King's AI Service</title>
+  <meta name="description" content="কিং এর এআই সল্যুশন - ব্যবসায়িক উন্নয়নের জন্য AI-powered পরিষেবা।">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Serif Bengali', serif; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-4">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="assets/logo.png" alt="King's Logo" class="h-12 w-12 rounded-full border-2 border-yellow-400">
+        <span class="text-xl font-bold">King's AI</span>
+      </div>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:text-yellow-400" data-lang="en">Home</a>
+        <a href="index.html" class="hover:text-yellow-400" data-lang="bn" style="display:none;">হোম</a>
+        <a href="portfolio.html" class="hover:text-yellow-400" data-lang="en">Portfolio</a>
+        <a href="portfolio.html" class="hover:text-yellow-400" data-lang="bn" style="display:none;">পোর্টফোলিও</a>
+        <a href="blog.html" class="hover:text-yellow-400" data-lang="en">Blog</a>
+        <a href="blog.html" class="hover:text-yellow-400" data-lang="bn" style="display:none;">ব্লগ</a>
+<!-- Contact লিংক -->
+  <a href="contact.html" class="hover:text-yellow-400" data-lang="en">Contact</a>
+<a href="service.html" class="hover:text-yellow-400" data-lang="en">Service</a>
+
+
+  <a href="contact.html" class="hover:text-yellow-400" data-lang="bn" style="display:none;">যোগাযোগ</a>
+<a href="login.html" data-lang="en">Login</a>
+<a href="login.html" data-lang="bn" style="display:none;">লগইন</a>
+
+<a href="signup.html" data-lang="en">Sign Up</a>
+<a href="signup.html" data-lang="bn" style="display:none;">সাইন আপ</a>
+
+      </nav>
+      <button onclick="toggleLanguage()" class="bg-yellow-500 px-3 py-1 rounded hover:bg-yellow-600">বাংলা/EN</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-purple-600 to-indigo-700 text-white text-center py-16 px-6">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4" data-lang="en">Welcome to King's AI Service</h2>
+    <h2 class="text-4xl md:text-5xl font-bold mb-4" data-lang="bn" style="display:none;">কিং এর এআই সেবা তে স্বাগতম</h2>
+    
+    <p class="text-lg md:text-xl mb-6" data-lang="en">AI-powered solutions for your business growth.</p>
+    <p class="text-lg md:text-xl mb-6" data-lang="bn" style="display:none;">ব্যবসার উন্নতির জন্য এআই চালিত সমাধান।</p>
+    
+    <a href="#services" data-lang="en" class="bg-yellow-500 px-6 py-3 rounded-lg hover:bg-yellow-600">Explore Services</a>
+    <a href="#services" data-lang="bn" style="display:none;" class="bg-yellow-500 px-6 py-3 rounded-lg hover:bg-yellow-600">সেবা দেখুন</a>
+<a href="contact.html" class="bg-green-600 px-6 py-3 rounded-lg hover:bg-green-700">
+  Contact Us
+</a>
+
+  </section>
+
+<aside class="bg-white p-4 shadow rounded space-y-6">
+      <!-- Search -->
+      <div>
+  <h3 class="text-xl font-bold mb-4">অনুসন্ধান করুন</h3>
+  <div class="flex">
+    <input id="searchInput" type="text" placeholder="Google এ অনুসন্ধান করুন..." class="flex-grow border p-2">
+    <button onclick="googleSearch()" class="bg-gray-800 text-white px-3">🔍</button>
+  </div>
+</div>
+
+<script>
+  function googleSearch() {
+    const query = document.getElementById('searchInput').value;
+    if (query.trim() !== '') {
+      const googleUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+      window.open(googleUrl, '_blank'); // নতুন ট্যাবে খুলবে
+    }
+  }
+</script>
+
+
+      <!-- Login -->
+      <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
+    <h2 class="text-2xl font-bold text-center mb-6" data-lang="en">Login</h2>
+    <h2 class="text-2xl font-bold text-center mb-6" data-lang="bn" style="display:none;">লগইন</h2>
+
+    <form action="#" method="POST" class="space-y-4">
+      <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      <input type="password" placeholder="Password" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500">
+      <button type="submit" class="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700">Login</button>
+    </form>
+<p class="text-sm text-gray-600 mt-4 text-center">
+      Don't have an account? 
+      <a href="signup.html" class="text-indigo-600 hover:underline">Sign Up</a>
+    </p>
+  </div>
+
+
+  <!-- Services Section -->
+  <section id="services" class="max-w-6xl mx-auto px-4 py-12">
+    <h3 class="text-3xl font-bold text-center mb-10" data-lang="en">Our Services</h3>
+    <h3 class="text-3xl font-bold text-center mb-10" data-lang="bn" style="display:none;">আমাদের সেবাসমূহ</h3>
+
+
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Service 1 -->
+      <div class="bg-white shadow rounded p-6 text-center hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-3" data-lang="en">AI Consultation</h4>
+        <h4 class="text-xl font-semibold mb-3" data-lang="bn" style="display:none;">এআই পরামর্শ</h4>
+        <p data-lang="en">Get expert advice on AI strategy for your business.</p>
+        <p data-lang="bn" style="display:none;">আপনার ব্যবসার জন্য এআই কৌশল বিষয়ে বিশেষজ্ঞ পরামর্শ নিন।</p>
+      </div>
+      <!-- Service 2 -->
+      <div class="bg-white shadow rounded p-6 text-center hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-3" data-lang="en">Web Development</h4>
+        <h4 class="text-xl font-semibold mb-3" data-lang="bn" style="display:none;">ওয়েব ডেভেলপমেন্ট</h4>
+        <p data-lang="en">Modern websites with AI-driven features.</p>
+        <p data-lang="bn" style="display:none;">এআই-চালিত ফিচার সহ আধুনিক ওয়েবসাইট।</p>
+      </div>
+      <!-- Service 3 -->
+      <div class="bg-white shadow rounded p-6 text-center hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-3" data-lang="en">Digital Marketing</h4>
+        <h4 class="text-xl font-semibold mb-3" data-lang="bn" style="display:none;">ডিজিটাল মার্কেটিং</h4>
+        <p data-lang="en">Boost your online presence with smart AI tools.</p>
+        <p data-lang="bn" style="display:none;">স্মার্ট এআই টুলের মাধ্যমে আপনার অনলাইন উপস্থিতি বৃদ্ধি করুন।</p>
+      </div>
+    </div>
+  </section>
+
+ <footer class="bg-gray-900 text-white text-center py-4">
+  &copy; 2025 King's AI Service.
+  <a href="contact.html" class="hover:text-yellow-400 ml-2">Contact</a>
+ <a href="index.html" class="hover:text-yellow-400" data-lang="en">Home</a>
+ <a href="blog.html" class="hover:text-yellow-400" data-lang="en">Blog</a>
+<a href="login.html" class="hover:text-yellow-400">Login</a> | 
+  <a href="signup.html" class="hover:text-yellow-400">Sign Up</a> | 
+  <a href="subscription.html" class="hover:text-yellow-400">Subscribe</a>
+</footer>
+
+
+  <!-- Language Toggle Script -->
+  <script>
+    let currentLang = 'en';
+    function toggleLanguage() {
+      currentLang = (currentLang === 'en') ? 'bn' : 'en';
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = (el.dataset.lang === currentLang) ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>

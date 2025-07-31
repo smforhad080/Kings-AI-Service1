@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - King's AI</title>
+  <meta name="description" content="কিং এর সমস্ত এআই সেবা ও হোম সার্ভিস।">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Serif Bengali', serif; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-4">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="assets/logo.png" alt="King's Logo" class="h-12 w-12 rounded-full border-2 border-yellow-400">
+        <span class="text-xl font-bold">King's AI</span>
+      </div>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:text-yellow-400" data-lang="en">Home</a>
+        <a href="index.html" class="hover:text-yellow-400" data-lang="bn" style="display:none;">হোম</a>
+        <a href="portfolio.html" class="hover:text-yellow-400" data-lang="en">Portfolio</a>
+        <a href="portfolio.html" class="hover:text-yellow-400" data-lang="bn" style="display:none;">পোর্টফোলিও</a>
+        <a href="blog.html" class="hover:text-yellow-400" data-lang="en">Blog</a>
+        <a href="blog.html" class="hover:text-yellow-400" data-lang="bn" style="display:none;">ব্লগ</a>
+        <a href="services.html" class="hover:text-yellow-400 text-yellow-400 font-bold" data-lang="en">Services</a>
+        <a href="services.html" class="hover:text-yellow-400 text-yellow-400 font-bold" data-lang="bn" style="display:none;">সেবা</a>
+        <a href="contact.html" class="hover:text-yellow-400" data-lang="en">Contact</a>
+        <a href="contact.html" class="hover:text-yellow-400" data-lang="bn" style="display:none;">যোগাযোগ</a>
+      </nav>
+      <button onclick="toggleLanguage()" class="bg-yellow-500 px-3 py-1 rounded hover:bg-yellow-600">বাংলা/EN</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white text-center py-16 px-6">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4" data-lang="en">Our Services</h2>
+    <h2 class="text-4xl md:text-5xl font-bold mb-4" data-lang="bn" style="display:none;">আমাদের সেবাসমূহ</h2>
+    <p class="text-lg md:text-xl" data-lang="en">We offer all essential AI and home services for your needs.</p>
+    <p class="text-lg md:text-xl" data-lang="bn" style="display:none;">আমরা আপনার প্রয়োজনীয় সকল এআই এবং হোম সার্ভিস প্রদান করি।</p>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      
+      <!-- Doctor Appointment -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+        <img src="assets/doctor.png" alt="Doctor" class="mx-auto h-20 mb-4">
+        <h3 class="text-xl font-semibold mb-2" data-lang="en">Doctor Appointment</h3>
+        <h3 class="text-xl font-semibold mb-2" data-lang="bn" style="display:none;">ডাক্তার অ্যাপয়েন্টমেন্ট</h3>
+      </div>
+
+      <!-- Ambulance Service -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+        <img src="assets/ambulance.png" alt="Ambulance" class="mx-auto h-20 mb-4">
+        <h3 class="text-xl font-semibold mb-2" data-lang="en">Ambulance Service</h3>
+        <h3 class="text-xl font-semibold mb-2" data-lang="bn" style="display:none;">অ্যাম্বুলেন্স সার্ভিস</h3>
+      </div>
+
+      <!-- Medicine Service -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+        <img src="assets/medicine.png" alt="Medicine" class="mx-auto h-20 mb-4">
+        <h3 class="text-xl font-semibold mb-2" data-lang="en">Medicine Service</h3>
+        <h3 class="text-xl font-semibold mb-2" data-lang="bn" style="display:none;">ঔষধ সেবা</h3>
+      </div>
+
+      <!-- Medical Service -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+        <img src="assets/medical.png" alt="Medical" class="mx-auto h-20 mb-4">
+        <h3 class="text-xl font-semibold mb-2" data-lang="en">Medical Service</h3>
+        <h3 class="text-xl font-semibold mb-2" data-lang="bn" style="display:none;">মেডিকেল সেবা</h3>
+      </div>
+
+      <!-- Emergency Service -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+        <img src="assets/emergency.png" alt="Emergency" class="mx-auto h-20 mb-4">
+        <h3 class="text-xl font-semibold mb-2" data-lang="en">Emergency Service</h3>
+        <h3 class="text-xl font-semibold mb-2" data-lang="bn" style="display:none;">জরুরি সেবা</h3>
+      </div>
+
+      <!-- Plumber Service -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+        <img src="assets/plumber.png" alt="Plumber" class="mx-auto h-20 mb-4">
+        <h3 class="text-xl font-semibold mb-2" data-lang="en">Plumber Service</h3>
+        <h3 class="text-xl font-semibold mb-2" data-lang="bn" style="display:none;">প্লাম্বার সার্ভিস</h3>
+      </div>
+
+      <!-- Electrician Service -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+        <img src="assets/electrician.png" alt="Electrician" class="mx-auto h-20 mb-4">
+        <h3 class="text-xl font-semibold mb-2" data-lang="en">Electrician Service</h3>
+        <h3 class="text-xl font-semibold mb-2" data-lang="bn" style="display:none;">ইলেকট্রিশিয়ান সার্ভিস</h3>
+      </div>
+
+      <!-- Rent Service -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+        <img src="assets/rent.png" alt="Rent" class="mx-auto h-20 mb-4">
+        <h3 class="text-xl font-semibold mb-2" data-lang="en">Rent Service</h3>
+        <h3 class="text-xl font-semibold mb-2" data-lang="bn" style="display:none;">রেন্ট সার্ভিস</h3>
+      </div>
+
+      <!-- Home Rent Service -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+        <img src="assets/home_rent.png" alt="Home Rent" class="mx-auto h-20 mb-4">
+        <h3 class="text-xl font-semibold mb-2" data-lang="en">Home Rent Service</h3>
+        <h3 class="text-xl font-semibold mb-2" data-lang="bn" style="display:none;">বাড়ি ভাড়া সেবা</h3>
+      </div>
+
+      <!-- Ride Service -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+        <img src="assets/ride.png" alt="Ride" class="mx-auto h-20 mb-4">
+        <h3 class="text-xl font-semibold mb-2" data-lang="en">Ride Service</h3>
+        <h3 class="text-xl font-semibold mb-2" data-lang="bn" style="display:none;">রাইড সার্ভিস</h3>
+      </div>
+
+      <!-- Delivery Service -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+        <img src="assets/delivery.png" alt="Delivery" class="mx-auto h-20 mb-4">
+        <h3 class="text-xl font-semibold mb-2" data-lang="en">Delivery Service</h3>
+        <h3 class="text-xl font-semibold mb-2" data-lang="bn" style="display:none;">ডেলিভারি সার্ভিস</h3>
+      </div>
+
+      <!-- Super Shop Service -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+        <img src="assets/supershop.png" alt="Super Shop" class="mx-auto h-20 mb-4">
+        <h3 class="text-xl font-semibold mb-2" data-lang="en">Super Shop Service</h3>
+        <h3 class="text-xl font-semibold mb-2" data-lang="bn" style="display:none;">সুপার শপ সার্ভিস</h3>
+      </div>
+
+      <!-- Lift Service -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+        <img src="assets/lift.png" alt="Lift" class="mx-auto h-20 mb-4">
+        <h3 class="text-xl font-semibold mb-2" data-lang="en">Lift Service</h3>
+        <h3 class="text-xl font-semibold mb-2" data-lang="bn" style="display:none;">লিফট সার্ভিস</h3>
+      </div>
+
+      <!-- AC Service -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center hover:shadow-xl transition">
+        <img src="assets/ac.png" alt="AC" class="mx-auto h-20 mb-4">
+        <h3 class="text-xl font-semibold mb-2" data-lang="en">AC Service</h3>
+        <h3 class="text-xl font-semibold mb-2" data-lang="bn" style="display:none;">এসি সার্ভিস</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4">
+    &copy; 2025 King's AI Service. All Rights Reserved.
+<a href="index.html" class="hover:text-yellow-400" data-lang="en">Home</a>
+
+<a href="contact.html" class="hover:text-yellow-400 ml-2">Contact</a>
+ <a href="index.html" class="hover:text-yellow-400" data-lang="en">Home</a>
+ <a href="blog.html" class="hover:text-yellow-400" data-lang="en">Blog</a>
+<a href="login.html" class="hover:text-yellow-400">Login</a> | 
+  <a href="signup.html" class="hover:text-yellow-400">Sign Up</a> | 
+  <a href="subscription.html" class="hover:text-yellow-400">Subscribe</a>
+
+  </footer>
+
+  <!-- Language Toggle Script -->
+  <script>
+    let currentLang = 'en';
+    function toggleLanguage() {
+      currentLang = (currentLang === 'en') ? 'bn' : 'en';
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = (el.dataset.lang === currentLang) ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
